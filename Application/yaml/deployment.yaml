@@ -2,18 +2,18 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
 # set your lab user name
-  name: user24-hello-world
+  name: ibrilo-hello-world
 spec:
   replicas: 3
   selector:
     matchLabels:
 # set your lab user name
-      app: user24-hello-world
+      app: ibrilo-hello-world
   template:
     metadata:
       labels:
 # set your lab user name
-        app: user24-hello-world
+        app: ibrilo-hello-world
     spec:
       containers:
         - resources: {}
@@ -24,7 +24,7 @@ spec:
               protocol: TCP
           imagePullPolicy: IfNotPresent
 # update with the image you build in part 1
-          image: 'quay.io/user24/app:v1'
+          image: 'quay.io/ibrilo/app:v1'
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
   strategy:
