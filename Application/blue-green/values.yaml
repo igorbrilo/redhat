@@ -1,8 +1,8 @@
 deployment:
-  - name: blue
-    replicas: 1
-    color: blue
-    weight: 5
+  # - name: blue
+  #   replicas: 1
+  #   color: blue
+  #   weight: 5
     
   - name: green
     replicas: 1
@@ -14,7 +14,7 @@ deployment:
     color: red
     weight: 5
 
-  # - name: yellow
-  #   replicas: 1
-  #   color: yellow
-  #   weight: 5
+  - name: yellow
+    replicas: 1
+    color: yellow
+    weight: 5
