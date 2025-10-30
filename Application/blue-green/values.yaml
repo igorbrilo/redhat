@@ -7,15 +7,16 @@ deployment:
   - name: green
     replicas: 1
     color: green
-    weight: 5
+    weight: 10
 
   - name: red
     replicas: 1
     color: red
-    weight: 10
+    weight: 50
+    speed: 50
 
   - name: yellow
     replicas: 1
     color: yellow
-    weight: 15
-    speed: 50
+    weight: 100
+    speed: 100
